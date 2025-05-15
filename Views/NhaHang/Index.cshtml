@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Danh sách nhà hàng";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Danh sách nhà hàng</h1>
+
+    <div class="row">
+        @foreach (var nhaHang in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="@nhaHang.ImageUrl" class="card-img-top" alt="@nhaHang.TenNhaHang">
+                    <div class="card-body">
+                        <h5 class="card-title">@nhaHang.TenNhaHang</h5>
+                        <p class="card-text"><strong>Địa chỉ:</strong> @nhaHang.DiaChi</p>
+                        <p class="card-text"><strong>Hotline:</strong> @nhaHang.SDT</p>
+                        <a href="@Url.Action("ChiTiet", "NhaHang", new { id = nhaHang.Id })" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

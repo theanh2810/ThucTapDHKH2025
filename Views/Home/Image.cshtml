@@ -1,0 +1,207 @@
+﻿@{
+    ViewData["Title"] = "Image Page";
+}
+
+@* <div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div> *@
+<style>
+    .btn_upload {
+        cursor: pointer;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        background-color: #2a72d4;
+        border: 1px solid #166b8a;
+        padding: 5px 10px;
+    }
+
+        .btn_upload:hover,
+        .btn_upload:focus {
+            background-color: #7ca9e6;
+        }
+
+    .yes {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px !important;
+    }
+
+    .btn_upload input {
+        cursor: pointer;
+        height: 100%;
+        position: absolute;
+        filter: alpha(opacity=1);
+        -moz-opacity: 0;
+        opacity: 0;
+    }
+
+    .it {
+        height: 100px;
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .btn-rmv1,
+    .btn-rmv2,
+    .btn-rmv3,
+    .btn-rmv4,
+    .btn-rmv5 {
+        display: none;
+    }
+
+    .rmv {
+        cursor: pointer;
+        color: #fff;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        display: inline-block;
+        background: rgba(255, 0, 0, 1);
+        margin: -5px -10px;
+    }
+
+        .rmv:hover {
+            background: rgba(255, 0, 0, 0.5);
+        }
+
+</style>
+
+
+@* <input type="file" id="imageInput" multiple> *@
+
+
+<h3>Danh sách ảnh</h3>
+<div class="preview" id="imageGallery"></div>
+
+<h2>Tải ảnh lên</h2>
+<div class="yes">
+    <span class="btn_upload">
+        <input type="file" id="imag" title="" class="input-img" />
+        Choose Image
+    </span>
+    <img id="ImgPreview" src="" class="preview1" />
+    <input type="button" id="removeImage1" value="x" class="btn-rmv1" />
+</div>
+
+<button onclick="uploadImages()">Upload</button>
+<script>
+    //const domain = window.location.origin;
+    //const imageInput = document.getElementById('imageInput');
+    //const imageGallery = document.getElementById('imageGallery');
+
+    // const uploadImages = () => {
+    //     const formData = new FormData();
+    //     const files = imageInput.files;
+
+    //     for (let i = 0; i < files.length; i++) {
+    //         formData.append('files', files[i]);
+    //     }
+
+    //     fetch(`${domain}/api/Image/Upload`, {
+    //         method: "POST",
+    //         body: formData
+    //     })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             console.log(data);
+    //             data.forEach(image => {
+    //                 const img = document.createElement('img');
+    //                 img.src = `${domain}/images/${image}`;
+    //                 imageGallery.appendChild(img);
+    //             });
+    //         })
+    //         .catch(error => console.error("Error:", error));
+    // }
+
+    const API_URL = "http://localhost:5000/api"; // Đổi lại URL của API nếu cần
+    // 🖼 Load danh sách ảnh
+    async function loadImages() {
+        const response = await fetch(`${domain}/api/get-images`);
+        const images = await response.json();
+        const gallery = document.getElementById("imageGallery");
+        gallery.innerHTML = "";
+
+        images.forEach(img => {
+            const imgContainer = document.createElement("div");
+            imgContainer.innerHTML = `
+                    <img src="${img.filePath}" alt="Ảnh">
+                    <button onclick="deleteImage(${img.id})">Xóa</button>
+                `;
+            gallery.appendChild(imgContainer);
+        });
+    }
+
+    // 📤 Upload ảnh
+    async function uploadImages() {
+        const input = document.getElementById("imag");
+        const files = input.files;
+
+        if (files.length === 0) {
+            alert("Vui lòng chọn ít nhất một ảnh!");
+            return;
+        }
+        console.log(files.length);
+        const formData = new FormData();
+        for (let file of files) {
+            formData.append("files", file);
+        }
+        console.log(formData);
+        // const response = await fetch(`${domain}/api/Upload/multiple-images`, {
+        //     method: "POST",
+        //     body: formData
+        // });
+        // console.log(response);
+        // if (response.ok) {
+        //     const data = await response.json();
+        //     console.log(data);
+        //     alert("Tải ảnh lên thành công!");
+        //     //loadImages(); // Load lại danh sách ảnh
+        // } else {
+        //     alert("Có lỗi xảy ra!");
+        // }
+    }
+
+    // ❌ Xóa ảnh
+    async function deleteImage(id) {
+        const response = await fetch(`${API_URL}/delete-image/${id}`, {
+            method: "DELETE"
+        });
+
+        if (response.ok) {
+            alert("Xóa ảnh thành công!");
+            loadImages();
+        } else {
+            alert("Lỗi khi xóa ảnh!");
+        }
+    }
+
+    // 🖼 Tải danh sách ảnh khi trang load
+    //document.addEventListener("DOMContentLoaded", loadImages);
+    function readURL(input, imgControlName) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $(imgControlName).attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imag").change(function () {
+        // add your logic to decide which image control you'll use
+        var imgControlName = "#ImgPreview";
+        readURL(this, imgControlName);
+        $('.preview1').addClass('it');
+        $('.btn-rmv1').addClass('rmv');
+    });
+
+    $("#removeImage1").click(function (e) {
+        e.preventDefault();
+        $("#imag").val("");
+        $("#ImgPreview").attr("src", "");
+        $('.preview1').removeClass('it');
+        $('.btn-rmv1').removeClass('rmv');
+    });
+</script>

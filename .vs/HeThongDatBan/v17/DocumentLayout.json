@@ -1,0 +1,508 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\NET CORE\\HeThongDatBan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\cms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\cms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\views\\home\\image.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:views\\home\\image.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\views\\cms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:views\\cms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\nhahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\nhahangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\jwtcookiemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\jwtcookiemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\data\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:data\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\data\\nhahangdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:data\\nhahangdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\services\\userapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:services\\userapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\services\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:services\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\services\\testapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:services\\testapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\services\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:services\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|e:\\net core\\hethongdatban\\models\\nhahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53AF3E4F-67BB-4469-9033-CECDE61ECD1D}|HeThongDatBan.csproj|solutionrelative:models\\nhahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1218,
+          "SelectedChildIndex": 39,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{81a57ae8-6550-4dd0-940c-503d379550cc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T01:23:13.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T01:21:20.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NhaHangController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\NhaHangController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NhaHangController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\NhaHangController.cs",
+              "RelativeToolTip": "Controllers\\NhaHangController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:24:30.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\Login.cs",
+              "RelativeDocumentMoniker": "Controllers\\Login.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\Login.cs",
+              "RelativeToolTip": "Controllers\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:24:26.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "JwtCookieMiddleware.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\JwtCookieMiddleware.cs",
+              "RelativeDocumentMoniker": "Controllers\\JwtCookieMiddleware.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\JwtCookieMiddleware.cs",
+              "RelativeToolTip": "Controllers\\JwtCookieMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:24:25.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:24:24.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CMS.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Controllers\\CMS.cs",
+              "RelativeDocumentMoniker": "Controllers\\CMS.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Controllers\\CMS.cs",
+              "RelativeToolTip": "Controllers\\CMS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:24:23.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersData.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Data\\UsersData.cs",
+              "RelativeDocumentMoniker": "Data\\UsersData.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Data\\UsersData.cs",
+              "RelativeToolTip": "Data\\UsersData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:23:28.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NhaHangData.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Data\\NhaHangData.cs",
+              "RelativeDocumentMoniker": "Data\\NhaHangData.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Data\\NhaHangData.cs",
+              "RelativeToolTip": "Data\\NhaHangData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:23:26.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:23:25.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T01:23:23.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Image.cshtml",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Image.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Image.cshtml",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Image.cshtml",
+              "RelativeToolTip": "Views\\Home\\Image.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T01:23:21.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Views\\CMS\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\CMS\\Index.cshtml",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Views\\CMS\\Index.cshtml",
+              "RelativeToolTip": "Views\\CMS\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T01:23:19.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-12T01:23:13.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserApiController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Services\\UserApiController.cs",
+              "RelativeDocumentMoniker": "Services\\UserApiController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Services\\UserApiController.cs",
+              "RelativeToolTip": "Services\\UserApiController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T09:00:34.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAF8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T08:48:56.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TestApiController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Services\\TestApiController.cs",
+              "RelativeDocumentMoniker": "Services\\TestApiController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Services\\TestApiController.cs",
+              "RelativeToolTip": "Services\\TestApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:47:32.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Services\\AuthController.cs",
+              "RelativeDocumentMoniker": "Services\\AuthController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Services\\AuthController.cs",
+              "RelativeToolTip": "Services\\AuthController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwIQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:47:31.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Services\\UploadController.cs",
+              "RelativeDocumentMoniker": "Services\\UploadController.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Services\\UploadController.cs",
+              "RelativeToolTip": "Services\\UploadController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:44:39.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NhaHang.cs",
+              "DocumentMoniker": "E:\\NET CORE\\HeThongDatBan\\Models\\NhaHang.cs",
+              "RelativeDocumentMoniker": "Models\\NhaHang.cs",
+              "ToolTip": "E:\\NET CORE\\HeThongDatBan\\Models\\NhaHang.cs",
+              "RelativeToolTip": "Models\\NhaHang.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAwwDAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:44:34.25Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1387,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1807,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 216,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

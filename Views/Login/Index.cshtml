@@ -1,0 +1,83 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <script>
+        const domain = window.location.origin;
+
+        const getData = (username, password) => {
+            let data = {
+                "Username": username,
+                "Password": password
+            };
+            return JSON.stringify(data);
+        }
+
+        console.log(domain);
+        async function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            const response = await fetch(`${domain}/api/Auth/Login`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: getData(email, password)
+            });
+
+            console.log(response);
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data);
+                //localStorage.setItem("accessToken", data.token);
+
+                // Giải mã token để lấy role
+                const payload = JSON.parse(atob(data.token.split(".")[1]));
+                const role = payload["role"]; // Lấy thông tin role từ token
+                console.log(role);
+
+                //const getToken = localStorage.getItem("accessToken");
+
+                window.location.href = "/CMS";
+
+               
+                // Chuyển hướng theo role
+                // if (role === "Admin") {
+                //     window.location.href = "/admin-dashboard.html";
+                // } else if (role === "Nhà hàng") {
+                //     window.location.href = "/restaurant-dashboard.html";
+                // } else {
+                //     window.location.href = "/user-dashboard.html";
+                // }
+            } else {
+                alert("Sai email hoặc mật khẩu!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>đăng nhập</h2>
+    <label>email:</label>
+    <input type="text" id="email" placeholder="nhập email">
+    <br>
+    <label>mật khẩu:</label>
+    <input type="password" id="password" placeholder="nhập mật khẩu">
+    <br>
+    <button onclick="login()">đăng nhập</button>
+
+    @* <form method="post">
+    <label for="username">Tên đăng nhập1:</label>
+    <input type="text" name="taiKhoan" required /><br />
+
+    <label for="password">Mật khẩu:</label>
+        <input type="password" name="matKhau" required /><br />
+
+    <button type="submit">Đăng nhập</button>
+    </form> *@
+</body>
+</html>

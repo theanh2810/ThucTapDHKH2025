@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CMS - Quản trị hệ thống</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            background-color: #343a40;
+            height: 100vh;
+            color: white;
+            padding-top: 20px;
+        }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px 15px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (Chiếm 2 cột - Menu) -->
+            <nav class="col-md-2 sidebar">
+                <h4 class="text-center">CMS</h4>
+                <a href="/CMS">🏠 Trang chủ</a>
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <a href="/CMS/Admin/QuanLyNguoiDung">👤 Quản lý Người Dùng</a>
+                    <a href="/CMS/Admin/QuanLyNhaHang">🏢 Quản lý Nhà Hàng</a>
+                    <a href="/CMS/Admin/ThongKe">📊 Thống kê</a>
+                }
+                @if (User.IsInRole("Restaurant"))
+                {
+                    <a href="/CMS/NhaHang/QuanLyThucDon">🍽️ Quản lý Thực Đơn</a>
+                    <a href="/CMS/NhaHang/QuanLyDatBan">📅 Quản lý Đặt Bàn</a>
+                    <a href="/CMS/NhaHang/TinTuc">📰 Tin tức & Khuyến mãi</a>
+                }
+                <span class="navbar-text text-white"> Xin chào, @User.Identity.Name</span>
+                <button class="btn btn-danger ms-2" onclick = "logout()"> Đăng xuất </button>
+            </nav>
+
+            <!-- Nội dung chính (Chiếm 8 cột) -->
+            <main class="col-md-8 p-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    const domain = window.location.origin;
+    //đăng xuất
+    const logout = () => {
+        fetch(`${domain}/api/Auth/Logout`, {
+            method: "POST",
+            credentials: "include"
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error("Error:", error));
+
+        window.location.href = "/Login"; // Chuyển hướng về trang đăng nhập
+    }
+
+    //test api phân quyền
+    const LoadUser = async () => {
+        try {
+            const response = await fetch(`${domain}/api/UserApi/GetUsersDapper`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    //"Authorization": `Bearer ${token}` // Gửi token
+                    credentials: "include"  // Quan trọng: Bắt buộc để trình duyệt gửi Cookie
+                }
+            });
+            console.log(response);
+            if (response.status === 403) {
+                alert("Bạn không có quyền truy cập!");
+                return;
+            }
+
+            const data = await response.json();
+            console.log("Dữ liệu API:", data);
+        } catch (error) {
+            console.error("Lỗi khi gọi API:", error);
+        }
+    }
+    LoadUser();
+</script>

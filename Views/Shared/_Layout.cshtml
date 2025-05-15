@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HeThongDatBan</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HeThongDatBan.styles.css" asp-append-version="true" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    @* <header>
+        <div class="logo">Đặt Bàn Online</div>
+        <nav>
+            <ul>
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="@Url.Action("Index", "NhaHang")">Nhà hàng</a></li>
+                <li><a href="#">Ưu đãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li>Xin chào, @User.Identity.Name | <button class="btn btn-danger ms-2" onclick="logout()"> Đăng xuất </button></li>
+                }
+                else
+                {
+                    <li><a href="@Url.Action("Index", "Login")" class="login-btn">Đăng nhập</a></li>
+                }
+            </ul>
+        </nav>
+    </header> *@
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - HeThongDatBan - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+<script>
+    const domain = window.location.origin;
+    function logout() {
+        console.log(123);
+        fetch(`${domain}/api/Auth/Logout`, {
+            method: "POST",
+            //credentials: "include"
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error("Error:", error));
+
+        window.location.reload(); // Chuyển hướng về trang đăng nhập
+    }
+
+    //test api phân quyền
+    const LoadUser = async () => {
+        try {
+            const response = await fetch(`${domain}/api/UserApi/GetUsersDapper`, {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    //"Authorization": `Bearer ${token}` // Gửi token
+                    credentials: "include"  // Quan trọng: Bắt buộc để trình duyệt gửi Cookie
+                }
+            });
+            console.log(response);
+            if (response.status === 403) {
+                alert("Bạn không có quyền truy cập!");
+                return;
+            }
+
+            const data = await response.json();
+            console.log("Dữ liệu API:", data);
+        } catch (error) {
+            console.error("Lỗi khi gọi API:", error);
+        }
+    }
+    LoadUser();
+</script>
