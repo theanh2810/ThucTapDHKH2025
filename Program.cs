@@ -5,6 +5,7 @@ using HeThongDatBan.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -150,6 +151,12 @@ builder.Services.AddAuthorization(options =>
 });
 
 //builder.Services.AddAuthorization();
+
+// Đăng ký Background Service
+
+
+builder.Services.AddHostedService<CancelExpiredReservationsService>();
+
 
 var app = builder.Build();
 

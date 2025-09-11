@@ -1,0 +1,31 @@
+#đặt tên cho workflow này trên github actions UI
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main  # chỉ chạy khi push lên nhánh main
+
+jobs: #tập hợp các job sẽ thực thi
+  build-and-push: #tên job
+    runs-on: ubuntu-latest #chọn môi trường runner
+
+    steps: #các bước thực hiện job
+      - name: Checkout repository #bước 1: checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to GitLab Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: registry.gitlab.com
+          username: ${{ secrets.GITLAB_USERNAME }}
+          password: ${{ secrets.GITLAB_TOKEN }}
+
+      - name: Build Docker image
+        run: |
+          docker build -t registry.gitlab.com/anhthenguyen2810-group/hethongdatban:latest .
+
+      - name: Push Docker image
+        run: |
+          docker push registry.gitlab.com/anhthenguyen2810-group/hethongdatban:latest
+

@@ -69,3 +69,10 @@ public partial class DangKyNhaHangRequest
     public TimeOnly? GioDongCua { get; set; }
 
 }
+
+public partial class TestDatBan
+{
+    public int ID { get; set; }
+    public bool TrangThai { get; set; }
+    public DateTime ThoiGianDat { get; set; }
+}

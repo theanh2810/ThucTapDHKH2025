@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b005032aef872acc64a98b090850e400f61ce8")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
