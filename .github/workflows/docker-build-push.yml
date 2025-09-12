@@ -31,7 +31,7 @@ jobs: #tập hợp các job sẽ thực thi
 
       
   deploy-local: # Job 2: Deploy xuống WSL local (chạy bằng seft-hosted runner)
-    runs-on: seft-hosted #chọn môi trường runner
+    runs-on: [self-hosted, Linux, X64] #chọn môi trường runner
     needs: build-and-push #job này phụ thuộc vào job build-and-push, tức là job này sẽ chạy sau khi job build-and-push hoàn thành
     steps: #các bước thực hiện job
       - name: Checkout repository #bước 1: checkout code
