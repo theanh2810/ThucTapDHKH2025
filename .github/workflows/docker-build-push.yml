@@ -29,3 +29,12 @@ jobs: #tập hợp các job sẽ thực thi
         run: |
           docker push registry.gitlab.com/anhthenguyen2810-group/hethongdatban:latest
 
+      - name: Build docker image
+        run: |
+          docker build -t hethongdatban:latest .
+      - name: Run container
+        run: |
+          docker stop hethongdatban-container || true 
+          docker rm hethongdatban-container || true
+          docker run -d -p 8080:8080 --name hethongdatban-container hethongdatban:latest
+
