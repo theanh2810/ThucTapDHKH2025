@@ -7,7 +7,7 @@ on:
       - master  # chỉ chạy khi push lên nhánh main
 
 jobs: #tập hợp các job sẽ thực thi
-  build-and-push: #tên job
+  build-and-push: # Job 1 : Build + push lên Gitlab Registry
     runs-on: ubuntu-latest #chọn môi trường runner
 
     steps: #các bước thực hiện job
@@ -37,4 +37,16 @@ jobs: #tập hợp các job sẽ thực thi
           docker stop hethongdatban-container || true 
           docker rm hethongdatban-container || true
           docker run -d -p 8080:8080 --name hethongdatban-container hethongdatban:latest
+  deploy-local: # Job 2: Deploy xuống WSL local (chạy bằng seft-hosted runner)
+    runs-on: seft-hosted #chọn môi trường runner
+    needs: build-and-push #job này phụ thuộc vào job build-and-push, tức là job này sẽ chạy sau khi job build-and-push hoàn thành
+    steps: #các bước thực hiện job
+      - name: Checkout repository #bước 1: checkout code
+        uses: actions/checkout@v3
+
+      - name: Run container from latest image
+        run: |
+          docker stop hethongdatban-container || true 
+          docker rm hethongdatban-container || true
+          docker run -d -p 8080:8080 --name hethongdatban-container registry.gitlab.com/anhthenguyen2810-group/hethongdatban:latest
 
