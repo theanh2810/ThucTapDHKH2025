@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a2e6d9006a4d96c0a80e3d1261a956cd44142d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b3c641281b9f214a58c9ae92fcb2a0144381ad1")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeThongDatBan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

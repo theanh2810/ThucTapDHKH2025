@@ -57,5 +57,15 @@ namespace HeThongDatBan.Data
                 return list;
             }
         }
+
+        public async Task<IEnumerable<User>> GetUsersFromSQLRawLinq()
+        {
+
+           var users = await _context.Users
+                .FromSqlRaw("SELECT * FROM Users")
+                .ToListAsync();
+
+            return users;
+        }
     }
 }

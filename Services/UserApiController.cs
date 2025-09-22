@@ -100,6 +100,19 @@ namespace HeThongDatBan.Services
             }
         }
 
+        [HttpGet]
+        public async Task<IEnumerable<User>> GetUserFromSqlRaw()
+        {
+            try
+            {
+                var item = await _user.GetUsersFromSQLRawLinq();
+                return item;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
         //[HttpGet]
         //public async Task<User> Login([FromBody] UserLogin data)
         //{

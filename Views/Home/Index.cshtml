@@ -94,37 +94,37 @@
 
 @* <button onclick="test()">Upload</button> *@
 <h2>Trang chu</h2>
-<div>CI/CD step 4 auto deploy wsl , connection sql 1</div>
+<div>CI/CD step 5 auto deploy wsl , connection sql 1, check tag</div>
 
 <script>
     async function test(){
         const formData = new FormData();
-    formData.append("TenNhaHang", "123");
-    formData.append("DiaChi", "123");
-    formData.append("SoDienThoai", "0398576551");
-    formData.append("Email", "anhnt@gmail.com");
-    formData.append("LoaiAmThuc", "truyền thống");
-    formData.append("MoTa", "");
-    formData.append("TienCoc", "0");
-    formData.append("GioMoCua", "08:00");
-    formData.append("GioDongCua", "22:00");
+        formData.append("TenNhaHang", "123");
+        formData.append("DiaChi", "123");
+        formData.append("SoDienThoai", "0398576551");
+        formData.append("Email", "anhnt@gmail.com");
+        formData.append("LoaiAmThuc", "truyền thống");
+        formData.append("MoTa", "");
+        formData.append("TienCoc", "0");
+        formData.append("GioMoCua", "08:00");
+        formData.append("GioDongCua", "22:00");
 
-    $.ajax({
-        url: "/api/Upload/DangKyNhaHang", // thay bằng API URL thật
-        type: "POST",
-        data: formData,
-        contentType: false,
-        processData: false,
-        success: function (res) {
-        console.log("Gửi thành công", res);
-        alert("Đăng ký thành công!");
-        },
-        error: function (err) {
-        console.error("Lỗi khi gọi API:", err);
-        alert("Có lỗi xảy ra!");
-            }
-        });
-    }
+        $.ajax({
+            url: "/api/Upload/DangKyNhaHang", // thay bằng API URL thật
+            type: "POST",
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (res) {
+            console.log("Gửi thành công", res);
+            alert("Đăng ký thành công!");
+            },
+            error: function (err) {
+            console.error("Lỗi khi gọi API:", err);
+            alert("Có lỗi xảy ra!");
+                }
+            });
+        }
     
 
     const API_URL = "http://localhost:5000/api"; // Đổi lại URL của API nếu cần
