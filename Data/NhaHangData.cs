@@ -34,9 +34,11 @@ namespace HeThongDatBan.Data
                
                 parameters.Add("@GioMoCua", data.GioMoCua);
                 Test list = conn.QueryFirstOrDefault<Test>("spu_NhaHang_Add", parameters, commandType: CommandType.StoredProcedure);
-                if(list != null)
+
+                if (list != null)
                     return list;
                 return null;
+                
             }
         }
 

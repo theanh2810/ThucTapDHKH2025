@@ -1,3 +1,6 @@
+# workflow
+# job -> step -> 
+
 #đặt tên cho workflow này trên github actions UI
 name: Build and Push Docker Image
 
@@ -21,7 +24,7 @@ jobs: #tập hợp các job sẽ thực thi
           username: ${{ secrets.GITLAB_USERNAME }}
           password: ${{ secrets.GITLAB_TOKEN }}
 
-      - name: Build Docker image
+      - name: Build Docker image # phải có dockerfile
         run: |
           docker build -t registry.gitlab.com/anhthenguyen2810-group/hethongdatban:latest .
 
